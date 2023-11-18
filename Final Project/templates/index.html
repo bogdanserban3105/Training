@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main %}
+<table class = "table">
+    <thead><tr>
+        <th scope="col">Symbol</th>
+        <th scope="col">Shares</th>
+        <th scope="col">Price</th>
+        <th scope="col">TOTAL</th>
+    </tr></thead>
+    <tbody>
+     {% for row in database %}
+        <tr>
+            <td scope="row">
+                {{ row["symbol"] }}
+            </td>
+            <td scope="row" id="s">
+                {{ row["shares"] }}
+            </td>
+            <td scope="row" id="p">
+                {{ row["price"] }}
+            </td>
+            <td scope="row" id="t">
+                {{ row["price"]*row["shares"] }}
+            </td>
+
+        </tr>
+     {% endfor %}
+    </tbody>
+    <tfoot>
+        <td scope="1"> FUNDS LEFT </td>
+        <td scope="1"> {{'%0.2f'| format(cash|float) }}</td>
+        <th scope="1"> INVESTMENT VALUE </th>
+        <td scope="1" >
+            {% set points = [0] -%}
+            {% for row in database -%}
+                {% if points.append(points.pop()+ row["price"]*row["shares"]) -%}{% endif %}
+            {% endfor %}
+            {{'%0.2f'| format(points[0]|float) }}
+        </td>
+    </tfoot>
+
+</table>
+{% endblock %}

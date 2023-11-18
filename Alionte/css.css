@@ -1,0 +1,69 @@
+.page-template-page-calculator-php .et_pb_promo {
+	margin-bottom: 0;
+}
+.ele-calculator {
+	text-align: center;
+	margin-bottom: 2.5em;
+}
+.ele-calculator fieldset {
+	display: inline-block;
+	background-color: #EEE;
+	padding: 1.5em;
+	border-radius: 2px;
+	margin-bottom: 1.0em;
+	text-align: left;
+}
+.ele-calculator .row {
+	margin-bottom: 1.0em;
+}
+.ele-calculator .row.hidden {
+	display: none;
+}
+.ele-calculator .row.last {
+	margin-bottom: 0;
+}
+.ele-calculator input,
+.ele-calculator select {
+	font-size: 14px;
+}
+.ele-calculator input[type="text"] {
+	padding: 0.5em;
+	margin-left: 5px;
+	min-width: 40px;
+	border-radius: 2px;
+}
+.ele-calculator p {
+	line-height: 1.0;
+}
+.ele-calculator .alert {
+	color: red;
+}
+.ele-calculator input[type="submit"] {
+	background-color: #418F48;
+	color: white;
+	border: none;
+	font-weight: bold;
+	padding: 0.75em 1.0em;
+	line-height: 1.0;
+	font-size: 14px;
+	border-radius: 2px;
+	margin-top: 0.5em;
+}
+.ele-calculator input[type="submit"]:hover,
+.ele-calculator input[type="submit"]:focus {
+	cursor: pointer;
+}
+@media (min-width: 768px) {
+	.ele-calculator fieldset {
+		padding: 1.25em;
+	}
+	.ele-calculator .row {
+		display: inline-block;
+		margin-right: 0.75em;
+		vertical-align: middle;
+		margin-bottom: 0;
+	}
+	.ele-calculator input[type="submit"] {
+		margin: 0 0 0 0.5em;
+	}
+}
