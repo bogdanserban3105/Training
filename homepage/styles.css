@@ -1,0 +1,339 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.all
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url("cool-background.png");
+    background-size: cover;
+}
+.all .title
+{
+    display: flex;
+    top: 0px;
+    position: sticky;
+    height: 10%;
+    max-height: 10%;
+    width: 100%;
+    float: left;
+    background-color: #42826D;
+    overflow: hidden;
+    border-radius: 30px;
+    opacity: 80%;
+}
+.all .title .boxy
+{
+    display: flex;
+    width: 80%;
+    height: 70%;
+    float: left;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px dashed #FFF ;
+    align-items:center;
+    justify-content:center;
+
+
+}
+.all .title .boxy h1
+{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 15px;
+    font: bold;
+    text-align: center;
+
+}
+.all .container
+{
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    position: relative;
+    margin: auto;
+    height: 600px;
+    max-width: 90% ;
+    max-height: 80% ;
+    margin: auto;
+    overflow: hidden;
+}
+.all .container .box
+{
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    width: 90%;
+    height: 600px;
+    max-height: 55%;
+    margin: 15px;
+    background: #000;
+    box-sizing: content-box;
+    border-radius: 500px;
+    border: 10px dashed #000;
+    opacity: 80%;
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.1);
+}
+.all .container .box .icon
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: 0.5s;
+    z-index: 1;
+    opacity: 70%;
+    border-radius: 500px;
+    text-align: center;
+}
+.all .container .box:hover .icon
+{
+    top: 20px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    opacity: 50%;
+    text-align: center;
+}
+.all .container .box .icon .fa
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 80px;
+    transition: 0.5s;
+    color: #fff;
+    text-align: center;
+}
+.all .container .box:hover .icon .fa
+{
+    font-size: 40px;
+}
+.all .container .box .content
+{
+    position: absolute;
+    top: 100%;
+    height: calc(100% - 100px);
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: 0.3s;
+    opacity: 50%;
+
+}
+.all .container .box:hover .content
+{
+    top: 100px;
+    opacity: 50%;
+}
+.all .container .box .content h3
+{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 24px;
+    opacity: 0%;
+}
+.all .container .box:hover .content h3
+{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 24px;
+    opacity: 100%;
+}
+.all .container .box .content p
+{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    opacity: 0%;
+}
+.all .container .box:hover .content p
+{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    opacity: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.contact
+{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("cool-background.png");
+    background-size: cover;
+
+}
+.contact .content
+{
+    max-width: 800px;
+    text-align: center;
+}
+.contact .content h2
+{
+    font-size: 50px;
+    font-weight: 500;
+    color: #fff;
+}
+.contact .content p
+{
+    font-weight: 300;
+    color: #fff;
+    text-align: justify;
+}
+.container
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .contact_information
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+.container .contact_information .box
+{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.container .contact_information .box .icon
+{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 30px;
+}
+.container .contact_information .box .text
+{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+.container .contact_information .box .text h3
+{
+    font-weight: 500;
+    color: #00bcd4;
+    font-weight: bold;
+}
+.contactForm
+{
+    border-radius: 35px;
+    width: 60%;
+    padding: 80px;
+    background: #fff;
+}
+.contactForm h2
+{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+.contactForm .inputBox
+{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea
+{
+    padding: 5px 0;
+    width: 100%;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contactForm .inputBox span
+{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span
+{
+
+    color: #e91e63;
+    font-size: 12px;
+    transform: translate(0, -20px);
+
+}
+.contactForm .inputBox button
+{
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+    font-size: 18px;
+    outline: none;
+    
+}
+
+@media  (max-width: 991px)
+{
+    .contact
+    {
+        padding: 50px;
+    }
+    .container
+    {
+        flex-direction: column;
+    }
+    .container .contact_information
+    {
+        margin-bottom: 40px;
+    }
+    .container .contact_information
+    {
+        width: 100%;
+    }
+}
